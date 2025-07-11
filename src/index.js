@@ -1,1 +1,3 @@
-alert("You mom");
+import { homePage } from "./homepage.js"
+
+homePage();
