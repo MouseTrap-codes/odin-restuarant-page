@@ -3,13 +3,10 @@ import bgImageSrc from "./vadim-bogulov-veSRX0sZDpQ-unsplash.jpg"
 export function homePage() {
 
     const content = document.querySelector("#content");
+    content.innerHTML = "";
 
     // bg image
     content.style.backgroundImage = `url(${bgImageSrc})`;
-    content.style.backgroundSize = "cover";
-    content.style.backgroundPosition = "center";
-    content.style.backgroundRepeat = "no-repeat";
-
 
     // restaurant name
     const restaurantName = document.createElement("div");
