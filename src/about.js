@@ -1,6 +1,9 @@
 export function about() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
+
+    const aboutContainer = document.createElement("div");
+    aboutContainer.classList.add("about-container");
     
     // restaurant name
     const restaurantName = document.createElement("div");
@@ -25,7 +28,7 @@ export function about() {
     ourStory.appendChild(ourStoryText1);
     ourStory.appendChild(ourStoryText2);
 
-    content.appendChild(ourStory);
+    aboutContainer.appendChild(ourStory);
 
     // the philosophy
     const ourPhilosophy = document.createElement("div");
@@ -45,7 +48,7 @@ export function about() {
     ourPhilosophy.appendChild(ourPhilosophyText1);
     ourPhilosophy.appendChild(ourPhilosophyText2);
 
-    content.appendChild(ourPhilosophy);
+    aboutContainer.appendChild(ourPhilosophy);
 
     // the experience
     const theExperience = document.createElement("div");
@@ -61,7 +64,7 @@ export function about() {
     theExperience.appendChild(theExperienceTitle);
     theExperience.appendChild(theExperienceText1);
 
-    content.appendChild(theExperience);
+    aboutContainer.appendChild(theExperience);
 
     // chef's note
     const chefNote = document.createElement("div");
@@ -77,7 +80,7 @@ export function about() {
     chefNote.appendChild(chefNoteTitle);
     chefNote.appendChild(chefNoteText1);
 
-    content.appendChild(chefNote);
+    aboutContainer.appendChild(chefNote);
 
     // tagline
     const tagline = document.createElement("div");
@@ -86,12 +89,17 @@ export function about() {
     const tagContainer = document.createElement("div");
     tagContainer.classList.add("about-content");
     const taglineText = document.createElement("em");
+    taglineText.classList.add("tagline-text");
     taglineText.textContent = "The Void: Where culinary expectations come to disappear.";
 
     tagContainer.appendChild(taglineText);
     tagline.appendChild(tagContainer);
 
-    content.append(tagline);
+    aboutContainer.append(tagline);
+
+
+    content.append(restaurantName)
+    content.appendChild(aboutContainer);
 
 
 

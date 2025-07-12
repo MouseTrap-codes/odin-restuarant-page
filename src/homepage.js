@@ -9,6 +9,9 @@ export function homePage() {
     restaurantName.classList.add("restaurant-name");
     restaurantName.textContent = "The Void";
 
+    const subtext = document.createElement("div");
+    subtext.classList.add("subtext-container");
+
     // subtext1
     const subtext1 = document.createElement("div");
     subtext1.classList.add("subtext");
@@ -20,10 +23,11 @@ export function homePage() {
     subtext2.classList.add("subtext");
     subtext2.textContent = "Our philosophy: Less is more. Much less if much more. Nothing is everything.";
 
+    subtext.appendChild(subtext1);
+    subtext.appendChild(subtext2);
 
     // append everything to content div
     content.appendChild(restaurantName);
-    content.appendChild(subtext1);
-    content.appendChild(subtext2);
+    content.appendChild(subtext);
 
 }
