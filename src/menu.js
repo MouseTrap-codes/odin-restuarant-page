@@ -1,11 +1,6 @@
-import bgImageSrc from "./vadim-bogulov-veSRX0sZDpQ-unsplash.jpg"
-
 export function menu() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
-
-     // bg image
-    content.style.backgroundImage = `url(${bgImageSrc})`;
 
     // restaurant name
     const restaurantName = document.createElement("div");
@@ -63,6 +58,7 @@ export function menu() {
     menuContainer.appendChild(item8);
     menuContainer.appendChild(item9);
 
+    content.appendChild(restaurantName);
     content.appendChild(menuContainer);
 }
 
