@@ -51,6 +51,20 @@ button:hover {
 
 .subtext {
     text-align: center;
+    padding: 20px 40px;
+}
+
+.subtext-sub {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .subtext-sub {
+        text-align: center;
+        font-size: 1rem;
+        max-width: 400px;
+    }
 }
 
 .menu-container {
@@ -83,4 +97,3 @@ button:hover {
 .tagline-text {
     font-size: 1.5rem;
 }
-
