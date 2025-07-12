@@ -1,6 +1,7 @@
 import { homePage } from "./homepage.js"
 import { menu } from "./menu.js";
 import { about } from "./about.js"
+import "./styles.css";
 
 function tabPageLogic() {
     // start on homepage 

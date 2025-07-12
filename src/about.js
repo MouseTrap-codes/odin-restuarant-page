@@ -1,5 +1,5 @@
 export function about() {
-    const content = document.querySelector("div");
+    const content = document.querySelector("#content");
     content.innerHTML = "";
     
     // restaurant name

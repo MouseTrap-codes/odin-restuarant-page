@@ -1,12 +1,8 @@
 // ./src/homepage.js
-import bgImageSrc from "./vadim-bogulov-veSRX0sZDpQ-unsplash.jpg"
 export function homePage() {
 
     const content = document.querySelector("#content");
     content.innerHTML = "";
-
-    // bg image
-    content.style.backgroundImage = `url(${bgImageSrc})`;
 
     // restaurant name
     const restaurantName = document.createElement("div");
